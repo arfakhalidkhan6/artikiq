@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+llama-index
+llama-index-vector-stores-supabase
+llama-index-embeddings-openai
+open-ai
+python-dotenv
+psycopg2-binary
+pydantic
+
