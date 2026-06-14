@@ -3,8 +3,9 @@ uvicorn
 llama-index
 llama-index-vector-stores-supabase
 llama-index-embeddings-openai
-open-ai
+openai
 python-dotenv
 psycopg2-binary
 pydantic
-
+pymupdf
+groq

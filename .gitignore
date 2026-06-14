@@ -1,8 +1,11 @@
 # Python
 __pycache__/
-.venv/
+venv/
 *.pyc
 .env
+
+# Data — never push textbooks to GitHub
+backend/data/
 
 # Flutter
 .dart_tool/
