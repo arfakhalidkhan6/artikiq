@@ -9,3 +9,4 @@ psycopg2-binary
 pydantic
 pymupdf
 groq
+langfuse>=2.0.0

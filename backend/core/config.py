@@ -14,11 +14,18 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 # --- Groq ---
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
+# --- Langfuse ---
+LANGFUSE_SECRET_KEY = os.getenv("LANGFUSE_SECRET_KEY")
+LANGFUSE_PUBLIC_KEY = os.getenv("LANGFUSE_PUBLIC_KEY")
+LANGFUSE_HOST = os.getenv("LANGFUSE_HOST", "https://cloud.langfuse.com")
+
 # --- Validate all required keys are present ---
 REQUIRED_VARS = {
     "SUPABASE_CONNECTION_STRING": SUPABASE_CONNECTION_STRING,
     "OPENAI_API_KEY": OPENAI_API_KEY,
     "GROQ_API_KEY": GROQ_API_KEY,
+    "LANGFUSE_SECRET_KEY": LANGFUSE_SECRET_KEY,
+    "LANGFUSE_PUBLIC_KEY": LANGFUSE_PUBLIC_KEY,
 }
 
 missing = [key for key, val in REQUIRED_VARS.items() if not val]

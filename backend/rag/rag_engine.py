@@ -3,7 +3,15 @@ import logging
 import psycopg2
 from llama_index.embeddings.openai import OpenAIEmbedding
 from groq import Groq
-from core.config import SUPABASE_CONNECTION_STRING, OPENAI_API_KEY, GROQ_API_KEY
+from langfuse import get_client, observe
+from core.config import SUPABASE_CONNECTION_STRING, OPENAI_API_KEY, GROQ_API_KEY, LANGFUSE_SECRET_KEY, LANGFUSE_PUBLIC_KEY, LANGFUSE_HOST
+import os
+
+os.environ["LANGFUSE_SECRET_KEY"] = LANGFUSE_SECRET_KEY
+os.environ["LANGFUSE_PUBLIC_KEY"] = LANGFUSE_PUBLIC_KEY
+os.environ["LANGFUSE_HOST"] = LANGFUSE_HOST
+
+langfuse = get_client()
 
 logger = logging.getLogger(__name__)
 
@@ -49,14 +57,17 @@ class ArtikIQRAGEngine:
                     "content": row[0],
                     "metadata": row[1] if isinstance(row[1], dict) else json.loads(row[1])
                 })
+
             return retrieved_chunks
 
         except Exception as e:
             logger.error(f"DATABASE SEARCH ERROR: Supabase query failed: {str(e)}")
             raise e
 
+    @observe()
     def generate_cited_answer(self, user_query: str):
         """Assembles context and generates a cited answer using Groq LLaMA."""
+
         context_blocks = self.retrieve_context(user_query, top_k=3)
 
         if not context_blocks:
@@ -99,8 +110,11 @@ class ArtikIQRAGEngine:
                 temperature=0.1,
                 max_tokens=1024
             )
+
+            answer = completion.choices[0].message.content
+
             return {
-                "answer": completion.choices[0].message.content,
+                "answer": answer,
                 "citations": citations_list
             }
 
