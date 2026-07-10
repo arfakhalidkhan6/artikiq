@@ -17,7 +17,6 @@ class SourceBadgeText extends StatelessWidget {
 
     int start = 0;
     for (final match in sourceRegex.allMatches(text)) {
-      // Text before the badge
       if (match.start > start) {
         spans.add(
           TextSpan(
@@ -27,7 +26,6 @@ class SourceBadgeText extends StatelessWidget {
         );
       }
 
-      // The badge itself
       spans.add(
         WidgetSpan(
           alignment: PlaceholderAlignment.middle,
@@ -52,7 +50,6 @@ class SourceBadgeText extends StatelessWidget {
       start = match.end;
     }
 
-    // Remaining text after last badge
     if (start < text.length) {
       spans.add(
         TextSpan(

@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import List
+from typing import List, Optional
 
 class QueryRequest(BaseModel):
     query: str
@@ -12,3 +12,4 @@ class CitationResponse(BaseModel):
 class QueryResponse(BaseModel):
     answer: str
     citations: List[CitationResponse]
+    trace_id: Optional[str] = None

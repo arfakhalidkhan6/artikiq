@@ -40,7 +40,20 @@ class _ChatScreenState extends State<ChatScreen> {
     super.dispose();
   }
 
-  // ── Supabase: load all chat sessions for sidebar ──────────────────────────
+  List<Citation> _filterCitedSources(
+    String answerText,
+    List<Citation> allCitations,
+  ) {
+    final List<Citation> usedCitations = [];
+    for (int i = 0; i < allCitations.length; i++) {
+      final sourceNumber = i + 1;
+      if (answerText.contains('Source $sourceNumber') ||
+          answerText.contains('[$sourceNumber]')) {
+        usedCitations.add(allCitations[i]);
+      }
+    }
+    return usedCitations.isEmpty ? allCitations : usedCitations;
+  }
 
   Future<void> _loadSessionThreads() async {
     try {
@@ -95,7 +108,6 @@ class _ChatScreenState extends State<ChatScreen> {
           };
         }).toList();
 
-        // Show citations from the last bot message that has them
         for (int i = _messages.length - 1; i >= 0; i--) {
           final List<Citation> cits = List<Citation>.from(
             _messages[i]['citations'] ?? [],
@@ -114,12 +126,11 @@ class _ChatScreenState extends State<ChatScreen> {
     _scaffoldKey.currentState?.closeDrawer();
   }
 
-  // ── Send question to backend ───────────────────────────────────────────────
-
   Future<void> _sendQuestion(String question) async {
     if (question.trim().isEmpty) return;
 
     final int userMsgIndex = _messages.length;
+
     setState(() {
       _messages.add({
         'sender': 'user',
@@ -139,28 +150,58 @@ class _ChatScreenState extends State<ChatScreen> {
         'citations': [],
       });
 
-      final response = await _queryService.ask(question);
+      final int botMsgIndex = _messages.length;
+      setState(() {
+        _messages.add({
+          'sender': 'bot',
+          'text': '',
+          'citations': <Citation>[],
+          'trace_id': null,
+        });
+      });
+
+      String accumulatedText = '';
+      List<Citation> finalCitations = [];
+      String? finalTraceId;
+
+      final stream = _queryService.askStream(question);
+
+      await for (final event in stream) {
+        if (event['type'] == 'answer_chunk') {
+          accumulatedText += event['content'] as String;
+          setState(() {
+            _messages[botMsgIndex]['text'] = accumulatedText;
+          });
+          await Future.delayed(const Duration(milliseconds: 15));
+        } else if (event['type'] == 'done') {
+          final List<dynamic> rawCitations = event['citations'] ?? [];
+          finalCitations = rawCitations
+              .map((c) => Citation.fromJson(Map<String, dynamic>.from(c)))
+              .toList();
+          finalTraceId = event['trace_id'] as String?;
+        }
+      }
+
+      final List<Citation> actuallyCited = _filterCitedSources(
+        accumulatedText,
+        finalCitations,
+      );
+      final bool hasRealCitations = actuallyCited.isNotEmpty;
 
       await supabase.from('chat_messages').insert({
         'thread_id': _currentThreadId,
         'sender': 'bot',
-        'message_text': response.answer,
-        'citations': response.citations.map((c) => c.toJson()).toList(),
+        'message_text': accumulatedText,
+        'citations': actuallyCited.map((c) => c.toJson()).toList(),
       });
 
-      final int botMsgIndex = _messages.length;
-      final bool hasCitations = response.citations.isNotEmpty;
-
       setState(() {
-        _messages.add({
-          'sender': 'bot',
-          'text': response.answer,
-          'citations': response.citations,
-        });
+        _messages[botMsgIndex]['citations'] = actuallyCited;
+        _messages[botMsgIndex]['trace_id'] = finalTraceId;
 
-        if (hasCitations) {
-          _messages[userMsgIndex]['citations'] = response.citations;
-          _currentCitations = response.citations;
+        if (hasRealCitations) {
+          _messages[userMsgIndex]['citations'] = actuallyCited;
+          _currentCitations = actuallyCited;
           _selectedMessageIndex = botMsgIndex;
         } else {
           _currentCitations = [];
@@ -204,8 +245,6 @@ class _ChatScreenState extends State<ChatScreen> {
     });
   }
 
-  // ── UI ─────────────────────────────────────────────────────────────────────
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -223,7 +262,6 @@ class _ChatScreenState extends State<ChatScreen> {
       ),
       body: Row(
         children: [
-          // Left: main chat area
           Expanded(
             flex: 8,
             child: Column(
@@ -258,7 +296,6 @@ class _ChatScreenState extends State<ChatScreen> {
               ],
             ),
           ),
-          // Right: citation panel — only shows when citations exist
           if (_currentCitations.isNotEmpty)
             Expanded(flex: 2, child: SourcePanel(citations: _currentCitations)),
         ],

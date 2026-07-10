@@ -1,0 +1,643 @@
+# Sample output from quality filter — LLM-based junk detection on ingested chunks
+# Result: 163 junk chunks removed from 1,187 total, leaving 1,024 clean chunks
+
+================================================================================
+CHUNK #1 | Page: 100
+LLM VERDICT: JUNK
+YOUR VERDICT (fill this in): 
+================================================================================
+Referring to Figure 3.24, write a brief description
+of the different sounds seen in the spectrogram.
+For example, which sounds have mostly low-
+frequency energy, and which have mostly 
+high-frequency energy?
+95
+
+
+================================================================================
+CHUNK #2 | Page: 501
+LLM VERDICT: JUNK
+YOUR VERDICT (fill this in): 
+================================================================================
+(1981). A clinical method for
+estimating laryngeal airway resistance during vowel pro-
+duction. Journal of Speech and Hearing Disorders, 46,
+138–146.
+Smitherman, G., & Van Dijk, T. (1988). Discourse and dis-
+crimination. Detroit, MI: Wayne State University Press.
+Smyth, R., Jacobs, G., & Rogers, H. (2003). Male voices and
+perceived sexual orientation: An experimental and theo-
+retical approach. Language in Society, 32, 329–350.
+Snidecor, J. C. (1962). Speech rehabilitation of the laryngec-
+tomized. Springfield, IL: Charles C. Thomas.
+Snidecor, J. C. (1971). Speech without a larynx. In L. E. Travis
+(Ed.), Handbook of speech pathology and audiology. East
+Norwalk, CT: Appleton-Century-Crofts.
+Snow, C. (1986). Conversations with children. In P. Fletcher &
+M. Garman (Eds.), Language acquisition (2nd ed.). New
+York, NY: Cambridge University Press.
+Snow, C., Burns, S., & Griffin, P. (Eds.). (1998). Preventing
+reading difficulties in young children. Washington, DC:
+National Academy Press.
+Snow, C. E. (1991). The theoretical basis for the relationships
+between language and literacy in development. Journal of
+Research in Child Education, 6, 5–10.
+496
+
+
+================================================================================
+CHUNK #3 | Page: 202
+LLM VERDICT: JUNK
+YOUR VERDICT (fill this in): 
+================================================================================
+. Tony and
+I. . . Tony and I. . . Tony and I. . . Tony. . . Tony. . . um. . . ah. . . ah went to Aspen
+this. . 
+
+================================================================================
+CHUNK #4 | Page: 191
+LLM VERDICT: USABLE
+YOUR VERDICT (fill this in): 
+================================================================================
+In short, the learning of language requires an incredibly complex and not fully
+understood synergy of motor and cognitive interaction and cooperation. Logically
+then, learning two languages may place increasingly heavy demands on those syntactic
+systems of young children addressed both by Karniol and by Benstein Ratner and
+Benitez.
+Young children who are expected to speak more than one language tend to be at
+greater risk for stuttering. Possible reasons for this may include the greater demand
+placed on the child’s motor and cognitive systems. Many experts feel the learning of
+one language places great demands on a child, so the learning of two or more lan-
+guages places extreme and unrealistic demands on the functioning systems of children.
+In turn, the extreme demands on the child’s system may cause breakdown manifested
+as stuttering.
+Famous People
+There are hundreds of famous people past and present whose lives have been impacted
+by living with a significant problem of stuttering (see posters from the National
+186
+
+
+================================================================================
+CHUNK #5 | Page: 200
+LLM VERDICT: USABLE
+YOUR VERDICT (fill this in): 
+================================================================================
+It is important to state, however, that normal nonflu-
+encies persist to at least a nominal degree in all people regardless of age.
+The Development of Stuttering
+Bloodstein (1960a, 1960b) describes four developmental phases of stuttering (see
+Figure 7.6). These phases may overlap, and there is a great deal of individual variation.
+
+
+================================================================================
+CHUNK #6 | Page: 23
+LLM VERDICT: USABLE
+YOUR VERDICT (fill this in): 
+================================================================================
+1 
+6
+Chapter 1
+Introduction
+respiratory therapists, physical therapists, occupational therapists, physicians,
+nutritionists, dentists, recreational therapists, nurses, case managers, and social workers.
+Our Professional Service Community
+The American Speech-Language-Hearing Association (ASHA) is the professional, sci-
+entific, and credentialing organization of over 135,000 audiologists, speech-language
+pathologists, and speech-language-hearing scientists. ASHA provides standards of
+professional practice and ethical conduct; publishes professional journals, accredita-
+tion standards for colleges and universities with communication sciences and disor-
+ders programs, and certification standards for individuals practicing the professions;
+promotes research initiatives; addresses workplace issues; lobbies federal and state gov-
+ernments for the benefit of our consumers and our professionals; recruits members
+into the professions; informs the public about the value of our professions; and
+addresses the challenges and needs of culturally diverse patients with disabilities and
+families, professionals, and students.
+The National Student Speech, Language, and Hearing Association (NSSLHA) is a
+pre-professional membership association for students interested in the study of com-
+munication sciences and disorders. Membership in NSSLHA is available to undergrad-
+uate, graduate, and doctoral students enrolled full- or part-time in a communication
+sciences program or related major (www.nsshla.org).
+The American Academy of Audiology (AAA) is an organization of and for
+audiologists.AAA has a membership of more than 11,000 audiologists and promotes qual-
+ity hearing and balance care by advancing the profession of audiology through leadership,
+advocacy, education, public awareness, and support of research (www.audiology.org).
+What Services Are Provided?
+
+
+================================================================================
+CHUNK #7 | Page: 425
+LLM VERDICT: JUNK
+YOUR VERDICT (fill this in): 
+================================================================================
+Evidence is grow-
+ing about the adverse effects on the development of the fetus’s central nervous systems
+resulting from substances ingested or inhaled by parents before and during pregnancy.
+420
+
+
+================================================================================
+CHUNK #8 | Page: 165
+LLM VERDICT: JUNK
+YOUR VERDICT (fill this in): 
+================================================================================
+Doggie go
+dɔgi goυ
+dɔdi doυ
+12. Duck go bye bye
+dk goυ baibai
+d do baibai
+13. Daddy eat soup
+dædi it sup
+dædi i tu
+14. drink water
+driŋk wɔtŋ
+di wɔ
+15. helicopter
+hεlikaptŋ
+k
+16. drink juice
+drik d
+us
+di du
+17. stove
+stoυv
+toυ
+18. rabbit
+ræbit
+wæ
+19. see
+si
+ti
+20. zoo
+zu
+du
+21. elephant
+εləfənt
+εfən
+22. paper
+peipe
+pei
+23. that
+ðæt
+dæ
+24. carrot
+kærət
+kæ
+25. spaghetti
+spəgεti
+gεti
+26. two books
+tu bυks
+tu b
+27. bath hot
+bæθ hat
+bæ ha
+28. thumb
+θm
+tm
+29. throw ball
+θroυ bɔl
+toυ bɔ
+30. goodnight moon
+gυdnait mun
+naI mu
+31. jump
+d
+mp
+dm
+32. baby sleep
+beibi slip
+beibi ti
+160
+
+
+================================================================================
+CHUNK #9 | Page: 88
+LLM VERDICT: USABLE
+YOUR VERDICT (fill this in): 
+================================================================================
+1. Bilabial (upper and lower lips): first sounds in bay, pay, may
+2. Labiodental (lower lip to upper teeth): first sounds in van, fan
+3. Linguadental (tongue tip to upper teeth): first sounds in this, thin
+4. Lingua-alveolar (tongue tip to the ridge just behind the upper teeth): first
+sounds in dip, tip, zip, sip, nip, lip
+5. Linguapalatal (tongue blade to hard palate): first sounds in gin, chin, shin
+6. Linguavelar (tongue back to hard or soft palate): first sounds in gum, come;
+last sounds in bag, back, bang
+7. Glottal (vocal folds): first sound in hay
+Next, we discuss manner of articulation, or how sounds are formed.
+Stops are made with a total obstruction of the vocal tract so that airflow ceases
+completely for a brief time.When the obstruction is broken, the air impounded behind
+83
+
+
+================================================================================
+CHUNK #10 | Page: 416
+LLM VERDICT: JUNK
+YOUR VERDICT (fill this in): 
+================================================================================
+Reprinted
+with the permission of
+Allyn and Bacon.
+411
+
+
+================================================================================
+CHUNK #11 | Page: 495
+LLM VERDICT: JUNK
+YOUR VERDICT (fill this in): 
+================================================================================
+(1993). Assessment and interven-
+tion considerations for unconventional verbal behavior. In
+S. F.Warren & J. Reichle (Series Eds.), J. Reichle & D.Wacker
+(Vol. Eds.), Communication and Language Intervention
+Series: Vol. 3. Communicative alternatives to challenging
+behavior: Integrating functional assessment and intervention
+strategies (pp. 263–297). Baltimore, MD: Paul H. Brookes.
+Prizant, B. M., & Wetherby, A. 
+
+================================================================================
+CHUNK #12 | Page: 493
+LLM VERDICT: JUNK
+YOUR VERDICT (fill this in): 
+================================================================================
+(1988b). Verbal reasoning. In M. A. Nippold
+(Ed.), Later language development: Ages nine through nine-
+teen. Boston, MA: College-Hill Press.
+Nippold, M. A. (1998). Later language development (2nd ed.).
+Austin, TX: Pro-Ed.
+Nippold, M. A. 
+
+================================================================================
+CHUNK #13 | Page: 477
+LLM VERDICT: JUNK
+YOUR VERDICT (fill this in): 
+================================================================================
+(2000).
+Radiographic and aerodynamic measures of velopharyn-
+geal anatomy and function following Furlow Z-plasty.
+Plastic and Reconstructive Surgery, 106(3), 539–549; dis-
+cussion 550–553.
+D’Antonio, L. L., Snyder, L. S., & Samadani, S. 
+
+================================================================================
+CHUNK #14 | Page: 304
+LLM VERDICT: USABLE
+YOUR VERDICT (fill this in): 
+================================================================================
+Classification, Causes, and Characteristic Features of Neurogenic Speech Disorders
+287
+marked discrepancy between their relatively good performance at automatic and reac-
+tive speech productions and their relatively poor volitional-purposive speech perfor-
+mance. These individuals may sound normal when producing words and phrases that
+are well known to them through practice or usage (e.g., repeating rhymes or jingles,
+reacting to a sudden stimulus, counting). 
+
+================================================================================
+CHUNK #15 | Page: 255
+LLM VERDICT: JUNK
+YOUR VERDICT (fill this in): 
+================================================================================
+1
+Chapter NINE
+Cleft Lip and Palate and
+Other Craniofacial
+Disorders
+Ann W. Kummer
+Cincinnati Children’s Hospital Medical Center and 
+University of Cincinnati Medical Center
+250
+
+
+================================================================================
+CHUNK #16 | Page: 432
+LLM VERDICT: JUNK
+YOUR VERDICT (fill this in): 
+================================================================================
+Source: Courtesy of
+Starkey Labs,
+Minneapolis, MN.
+
+
+================================================================================
+CHUNK #17 | Page: 423
+LLM VERDICT: JUNK
+YOUR VERDICT (fill this in): 
+================================================================================
+It is composed of two portions. 
+
+================================================================================
+CHUNK #18 | Page: 271
+LLM VERDICT: USABLE
+YOUR VERDICT (fill this in): 
+================================================================================
+Normal Velopharyngeal Function and
+Velopharyngeal Dysfunction
+It is important to understand normal velopharyngeal function before one can appreci-
+ate velopharyngeal dysfunction. Normal velopharyngeal closure is accomplished by the
+coordinated action of the velum (soft palate), the lateral pharyngeal walls, and the pos-
+terior pharyngeal wall (J. B. Moon & Kuehn, 1996, 2004). These structures function as
+a valve that closes off the nasal cavity from the oral cavity during speech.
+Velum (soft palate)
+Adenoid
+Pharyngeal wall
+FIGURE 9.16
+Position of the
+adenoid in the
+pharynx. The adenoid
+pad can help with
+closure in many
+cases. In many young
+children, there is
+velo-adenoidal
+closure rather than
+velopharyngeal
+closure.
+266
+
+
+================================================================================
+CHUNK #19 | Page: 476
+LLM VERDICT: JUNK
+YOUR VERDICT (fill this in): 
+================================================================================
+(1984). Bilingualism and special education: Issues
+in assessment and pedagogy. Austin, TX: Pro-Ed.
+Cunningham, E. T., & Jones, B. (2003). Anatomical and physi-
+ological overview. In B. Jones (Ed.), Normal and abnormal
+swallowing (pp. 11–34). New York, NY: Springer-Verlag.
+Curlee,R.F.(1980).A case selection strategy for young disfluent
+children. In W. Perkins (Ed.), Seminars in speech-language-
+hearing: Strategies in stuttering therapy (pp. 277–287). New
+York, NY: Thieme-Stratton.
+Czeizel, A. E., & Dudás, V. (1992). Prevention of the first
+occurrence of neural-tube defects by periconceptional
+471
+
+
+================================================================================
+CHUNK #20 | Page: 225
+LLM VERDICT: JUNK
+YOUR VERDICT (fill this in): 
+================================================================================
+The speech-language pathologist’s most
+useful skill is the ability to hear the voice and its associated variations. This capacity
+220
+
+
+================================================================================
+CHUNK #21 | Page: 133
+LLM VERDICT: JUNK
+YOUR VERDICT (fill this in): 
+================================================================================
+Department of Energy, 2003).
+Inheritance Patterns
+There are different patterns of inheritance, including Mendelian, non-Mendelian, and
+multifactorial inheritance patterns. A description of each type follows.
+Mendelian Inheritance
+Gregor Mendel, an Austrian monk, is credited with the discovery of the basis of hered-
+ity in his studies of pea plants. He developed the concepts of dominant and recessive
+genes. 
+
+================================================================================
+CHUNK #22 | Page: 334
+LLM VERDICT: USABLE
+YOUR VERDICT (fill this in): 
+================================================================================
+. strool an’ startin’ to fall off. That’s about all I see.
+(Goodglass & Kaplan, 1983, p. 90)
+Nonfluent Aphasias
+Broca’s Aphasia
+Broca’s aphasia is the more common of the two nonfluent aphasias.
+It is characterized by paucity of speech, difficulties in word retrieval, and a labored and
+slow rate of speech. Individuals with this disorder often omit small grammatical ele-
+ments such as the, is, and on and word endings such as -ing, -s, and -ed. This condition
+is called agrammatism.
+Comprehension of spoken and written language is surprisingly better than an
+individual’s spoken output would suggest. Repetition is marred by the fluency prob-
+lems, and writing mirrors the speech output. The mechanics of writing are also
+impaired because most patients with Broca’s aphasia also have right-arm and -leg
+paralysis. They must often learn to use the left hand for writing. Here is an example of
+the speech of a person with Broca’s aphasia:
+Q.
+What happened to make you lose your speech?
+A.
+Head, fall. Jesus Christ, me no good, str, str ... oh Jesus ... stroke.
+Q.
+I see. Could you tell me what you’ve been doing in the hospital?
+A.
+Yes, sure, me go er up P. T. nine o’cot, speech two times . . 
+
+================================================================================
+CHUNK #23 | Page: 174
+LLM VERDICT: USABLE
+YOUR VERDICT (fill this in): 
+================================================================================
+Discrimination of target sounds from error productions in initial and final position
+of simple words (one syllable)
+Spontaneous and elicited production of targets in words
+1. Simple words
+a. Facilitating contexts with frequent models of correct target production
+b. Nonfacilitating contexts with frequent models of correct targets 
+c. Reduction of models in both contexts
+2. Complex words (two or more syllables)
+a. Facilitating contexts with frequent models of correct target production
+b. Nonfacilitating contexts with frequent models of correct targets
+c. Reduction of models in both contexts
+3. Discrimination of the child’s correct and incorrect productions
+Production of targets in more complex utterances
+1. Set carrier phrases (e.g.,“I see a _____) with frequent models
+2. Simple spontaneous utterances with frequent models
+3. Reduced frequency of models
+4. Discrimination of the child’s correct and incorrect productions
+Generalization
+1. Controlled discourse (e.g., storytelling or story retelling) with clinician designed to
+frequently include targets
+2. Introduction of other conversational partners and settings
+3. 
+
+================================================================================
+CHUNK #24 | Page: 74
+LLM VERDICT: JUNK
+YOUR VERDICT (fill this in): 
+================================================================================
+69
+
+
+================================================================================
+CHUNK #25 | Page: 391
+LLM VERDICT: JUNK
+YOUR VERDICT (fill this in): 
+================================================================================
+1 
+448
+Chapter 16
+Swallowing
+Sensory Motor Cortex
+Thalamus
+Insula
+Cerebellum
+Mesencephalon Pons
+Medulla
+Cranial Nerves
+FIGURE 16.2
+Schematic of the
+cortical and subcortical
+components of the
+swallow (after Bass,
+1997).
+basal ganglia, pons, and medulla (Daniels & Foundas 1997; Daniels et al., 1996;
+Dziewas et al., 2003; Hamdy et al., 1999; R.E. Martin & Sessle, 1993; Suzuki et al.,
+2003). 
+
+================================================================================
+CHUNK #26 | Page: 481
+LLM VERDICT: JUNK
+YOUR VERDICT (fill this in): 
+================================================================================
+(2009). Explicit instruction: A framework for mean-
+ingful direct teaching. Upper Saddle River, NJ: Merrill.
+Golding-Kushner, K. J. 
+
+================================================================================
+CHUNK #27 | Page: 283
+LLM VERDICT: USABLE
+YOUR VERDICT (fill this in): 
+================================================================================
+Behavioral management involves speech therapy. These treatment options are
+discussed below.
+Dental and Orthodontic Treatment
+Because dentition and occlusion are affected by clefts and other craniofacial anomalies,
+early and consistent dental care is important. A child with a cleft lip and palate may
+require a maxillary expansion device in preschool, a bone graft to the alveolus around
+age 7, and orthodontic treatment during adolescence after all permanent dentition has
+erupted. The expansion devices and orthodontic treatment rarely interfere with speech
+or speech therapy. Certainly, normalizing the dentition and occlusion always has a pos-
+itive effect on speech.
+Many children with cleft lip/palate will develop maxillary retrusion with Class
+III malocclusion as they grow older. Because this is a skeletal problem, rather than
+dental problem, it cannot be corrected with orthodontics alone. Instead, correction
+of the occlusion has to be done with a combination of orthodontia and surgery.
+The surgery may involve a LeFort I maxillary advancement or distraction osteoge-
+nesis, where the bone is cut and gradually moved through a distraction device to
+allow a natural fill-in of new bone. Unfortunately, neither procedure can be done
+until after facial growth is complete. This is around age 14–15 in girls and age
+18–19 in boys.
+FIGURE 9.27
+Nasometry. The
+headset is positioned
+on the child so that
+the sound separator
+plate is perpendicular
+to the face or in a
+horizontal position.
+The microphones
+should be directly in
+front of the mouth
+and the nose.
+278
+
+
+================================================================================
+CHUNK #28 | Page: 227
+LLM VERDICT: USABLE
+YOUR VERDICT (fill this in): 
+================================================================================
+1 
+210
+Chapter 8
+Voice Disorders
+the problem is obvious, such as an accident, surgery, or a specific disease, the collection
+of background data will concentrate primarily on the patient’s current symptoms and
+attitudes about the problem, expressed need for remedial help, motivation, and capac-
+ity to undertake a rehabilitation program. When the cause of the vocal difficulty is not
+evident, however, careful questioning is essential. The speech-language pathologist
+attempts to obtain the following five types of information: (1) the individual’s opinion
+of the nature and seriousness of the problem; (2) the start and course of development
+of the problem, including previous treatment; (3) an overview of the medical and
+health history; (4) family structure and interrelationships; and (5) history of voice and
+speech disorders. Answers to questions about these five areas will tell how precisely the
+child or adult perceives the problem as compared with what the examiner has heard
+and seen. They will also reveal the length of time the disorder has been present, plus the
+suddenness or gradualness of onset.
+Learning about previous rehabilition experience will give insight into the concern
+for the problem felt by the person and the family. The medical and health history, par-
+ticularly before and around the time the voice problem seemed to begin, may reveal
+not just the diseases that could have influenced voice production, but also the feelings
+of the family toward the person and the problem. The family structure, including the
+number of siblings, the position of a child in the sequence of children, and the stability
+of the family, will reveal the presence or absence of verbal competition and compatibil-
+ity and/or emotional factors that could be contributors to the problem. When voice
+disorders are apparently present from birth, as evident in the cry sound or stridulous
+breathing, the cause may be developmental lag, structural abnormality, or disease. The
+developmental and structural deviations may be inherited, and questioning sometimes
+reveals voice problems elsewhere in the family. Obtaining a thorough case history
+requires broad knowledge about voice disorders and skill in developing questions. It
+can be facilitated by careful reading of the pertinent books listed at the end of the chap-
+ter. Questioning is an art that improves with self-evaluated experience.
+Referral
+As has been learned, voice disorders have different and often quite complicated causes.
+This chapter has suggested that the causes may be found in heredity, disease, injury,
+learning ability, family structure, environmental models, or a combination. While
+speech-language pathologists are required to know the potential significance of etio-
+logic factors, they are not qualified to explore all of them. Fortunately, there are skillful
+professional colleagues in special areas of medicine, psychology, and education who
+are ready to help. 
+
+================================================================================
+CHUNK #29 | Page: 186
+LLM VERDICT: USABLE
+YOUR VERDICT (fill this in): 
+================================================================================
+The latest sta-
+tistics reveal that in some locales in the United States, prevalence is as high as 2.1 per-
+cent. Prevalence data outside of the United States range up to 4.7 percent in the British
+West Indies (Bloodstein, 1995). About 85 percent of all cases of stuttering start during
+the preschool years. Boys outnumber girls who stutter by a ratio of 4 to 1. But a study
+of African Americans by Goldman (1967) showed a ratio of 2 to 1, males over females,
+suggesting the influence of cultural effects on this problem.
+Types, Descriptions, and Definitions
+of Various Disfluency Types
+In addition to stuttering, the most common disorder of fluency, there are several other
+problems that may interfere with a person’s ability to produce ongoing fluent speech.
+Each problem, thought to have different causes not yet fully understood by researchers,
+is briefly defined and described as follows (see Figure 7.1):
+1. Stuttering usually begins in early childhood and is the most common disor-
+der of fluency.
+I. It is defined as (a) disruption in the fluency of verbal expression, which is
+(b) characterized by involuntary, audible, or silent repetitions or prolon-
+gations in the utterance of short elements—namely, sounds, syllables, and
+words of one syllable. These disruptions (c) usually occur frequently or
+are marked in character and (d) are not readily controllable.
+II. Sometimes the disruptions are (e) accompanied by accessory activities
+involving the speech apparatus, related or unrelated body structures, or
+stereotyped speech utterances. These activities give the appearance of
+being speech-related struggle.
+181
+
+
+================================================================================
+CHUNK #30 | Page: 229
+LLM VERDICT: USABLE
+YOUR VERDICT (fill this in): 
+================================================================================
+1 
+212
+Chapter 8
+Voice Disorders
+tuning forks are sounding and another is added, the quality of the sound will change.
+The quality of the sound will also change if one or more of the forks are made to pro-
+duce a louder sound. The complex sound that is voice is determined by the way the glot-
+tal pulse is released and the modifications of that pulse sound in the pharynx, mouth,
+and nose. Not all of the vibratory factors are known, but we have reason to believe that
+the speed of opening and closing of the vocal folds during vibration, the length of the
+closed phase in the vibration cycle, and the undulatory configurations of the vocal fold
+margins influence the number and intensity of the tones within the spectrum.
+Resonance
+A process called resonance modifies the sound generated in the larynx.As sound passes
+through the upper vocal tract, some of the tones are enhanced and others are sup-
+pressed. Each vowel requires a unique positioning of the tongue and other structures;
+that is, the /i/ sound in see cannot be made when the mouth and tongue are adjusted
+for /a/ as in father. Sometimes the structures are impaired by paralysis or physical
+deformity, which alters the resonance patterns and creates speech or voice disorders.
+

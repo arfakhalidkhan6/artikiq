@@ -10,3 +10,6 @@ pydantic
 pymupdf
 groq
 langfuse>=2.0.0
+ragas
+datasets
+cohere

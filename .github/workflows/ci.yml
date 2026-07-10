@@ -1,0 +1,52 @@
+name: Backend CI
+
+# When should this run? Every push and every pull request targeting main.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Pull your repo's code onto the GitHub-hosted machine
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2: Install Python 3.11 (match your local venv version)
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Step 3: Install your dependencies
+      - name: Install dependencies
+        working-directory: backend
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install ruff
+
+      # Step 4: Lint — catches broken imports, undefined names, syntax errors
+      - name: Lint with ruff
+        working-directory: backend
+        run: |
+          ruff check api core main.py --select F,E9
+
+      # Step 5: Import check — confirms the FastAPI app actually builds
+      - name: Verify app imports successfully
+        working-directory: backend
+        env:
+          # Add any env vars your api/ or core/ code reads at import time.
+          # These pull from GitHub Secrets, never hardcoded here.
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          GROQ_API_KEY_FALLBACK: ${{ secrets.GROQ_API_KEY_FALLBACK }}
+        run: |
+          python -c "from main import app; print('App imported successfully:', app.title)"

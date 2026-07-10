@@ -1,0 +1,455 @@
+# Sample output from chunk inspection script — shows retrieved RAG chunks from the SLP textbooks
+
+================================================================================
+CHUNK #1
+Page: 225
+Book: Human Communication Disorders
+================================================================================
+Young women in high school and college who try to emulate actresses and entertainers
+may develop a similar condition and voice. In our culture, the breathy, low-pitched,
+female voice is often interpreted as sexy. Another type of functional dysphonia occurs
+when the vocal folds are squeezed together so tightly that they cannot vibrate normally.
+The adjustment resembles the laryngeal closure in the first stage of a cough. When
+overadduction occurs, the vocal sound may be quite hoarse and low-pitched, as heard
+in some of the stereotyped gang bosses shown in films. Occasionally, the ventricular
+folds are adducted more or less completely and forced to vibrate. The voice usually is
+quite hoarse. The several forms of hoarseness associated with excessive closure of the
+glottis are called hyperfunctional dysphonia in the literature (Boone & McFarlane,
+1994; Froeschels, 1952), many of which are a result of overuse or a misuse of the laryn-
+geal mechanism (referred to as phonotrauma).
+Organic Voice Disorders
+Many voice disorders are caused by organic impairments. Treatment of the impairment
+is usually the responsibility of medical specialties such as otolaryngology, endocrinol-
+ogy, or neurology. If a person with a voice disorder comes to a speech-language pathol-
+ogist for assistance without previous attention by a physician, the individual with the
+problem must be referred for proper medical diagnosis and appropriate treatment.
+Subsequently, if voice therapy is indicated, the speech-language pathologist should
+relate the plan for the rehabilitation voice program to both the underlying problem
+and the medical treatment used. Consequently, the speech-language pathologist must
+have a basic knowledge of the common diseases, disabilities, and medical treatments
+related to the voice-producing mechanism and is considered an integral part of the
+medical team. Some examples of organic voice disorders include laryngitis, tumors,
+Papillomata, vocal fold bowing, and arthritis, among others. The role of the speech
+pathologist in managing organic voice disorders is to assist in the evaluation of the dis-
+order, administration of voice therapy prior to a necessary surgical procedure, and/or
+administration of voice therapy following a laryngeal surgical procedure.
+Neurological Voice Disorders
+Neurological voice disorders are caused by either central or peripheral nervous system
+impairment. 
+
+================================================================================
+CHUNK #2
+Page: 307
+Book: Human Communication Disorders
+================================================================================
+Such intervention may be
+employed to produce a more appropriate valving mechanism and is followed by other
+approaches to maximize vocal efficiency. 
+
+================================================================================
+CHUNK #3
+Page: 170
+Book: Human Communication Disorders
+================================================================================
+A probe determines the target for the next session, and that target is
+introduced at the end of the session. An important part of this approach is the home
+program. Caretakers are asked to present the auditory bombardment list and elicit the
+production practice words once a day.
+One other commonly used method is the minimal pair or contrast approach
+(Elbert, Rockman, & Saltzman, 1980; Weiner, 1981). This focuses on minimal word
+pairs that contrast in the target and the child’s error (e.g., bow and boat for a child who
+deletes consonants at the ends of words). Perception and production activities can be
+organized around sets of these pairs. Other activities such as grouping or categorizing
+activities that highlight phonological characteristics may also be effective; Metaphon
+therapy (Howell & Dean, 1994) formalizes that idea. Intervention research (Tyler,
+Edwards, & Saxman, 1987) has demonstrated that both the minimal pair and the cycles
+approaches are effective.
+Studies have used an evidence-based practice framework to examine the effective-
+ness of different intervention methods. The majority have focused on phonological
+awareness (e.g., Justice & Pullen, 2003; Pokorni, Worthington, & Jamison, 2004). For
+170
+
+
+================================================================================
+CHUNK #4
+Page: 252
+Book: Human Communication Disorders
+================================================================================
+Although
+articulation therapy is appropriate for correction of the compensatory errors, it is not
+very effective until the abnormal structure is corrected. Therefore, the years of
+speech therapy were very ineffective and only served to negatively affect Angela’s
+self-esteem. Finally, children with a history of cleft lip and palate require coordinated
+services from a variety of medical, surgical, dental, psychological, and allied health
+professionals throughout childhood. Therefore, team care and follow-up are essential
+for optimal outcomes.
+
+
+================================================================================
+CHUNK #5
+Page: 141
+Book: Human Communication Disorders
+================================================================================
+What is considered acceptable diversity? Where is the line between medical
+treatment and enhancement?
+Health and environmental issues have arisen concerning genetically modified (GM)
+foods and microbes: Are GM foods and other products safe for humans and the environ-
+ment? How will these technologies affect developing nations’ dependence on the West?
+Regarding the commercialization of products including property rights (patents,
+copyrights, and trade secrets) and accessibility of data and materials, a couple of ques-
+tions are posed: Who owns genes and other pieces of DNA? Will patenting DNA
+sequences limit their accessibility and development into useful products? (www.ornl
+.gov/sci/techresources/Human_Genome/elsi/elsi.shtml)
+Summary
+Speech-language pathologists treat children and adults living with varied conditions
+that impact their ability to communicate. Most, if not all, conditions have a genetic
+link, although some of the linkages have not yet been identified. Therefore, it is imper-
+ative that students and practicing speech-language pathologists receive education
+about genetics and resources for connecting with professionals trained in genetics.
+Speech-language pathologists must acquire this new knowledge and apply it in transla-
+tional research as well as in assessment and intervention strategies. Translational
+research involves applying what is learned in laboratories to clinical settings; it serves as
+a bridge.
+Understanding the role genetics plays in health and disease provides the means to
+integrate such information into diagnosis, prevention, and treatment of many com-
+munication disorders.
+Ultimately, speech-language pathologists, regardless of specialty area, role, or
+practice setting, will face questions about the implications of genetics for patients. The
+fast pace of genetic advances and the paucity of professional training in genetics leave
+many providers without up-to-date answers for their patients.
+
+
+================================================================================
+CHUNK #6
+Page: 119
+Book: Human Communication Disorders
+================================================================================
+there is a need to increase the number of available tests to
+the full variety of relevant languages.
+Models of treatment and approaches are also needed to determine which lan-
+guages to emphasize in therapy as well as the goals, target structures, and response cri-
+teria. According to Lorenza and Murray (2008), sufficient evidence-based research
+practices and experiential support are generally lacking. Moreover, the principles
+applied to monolingual aphasics and English language learners may be less efficient for
+bilingual aphasics. For example, Kiran and Edmonds (2004) and Edmonds and Kiran
+(2006) found that for bilingual aphasics, the weaker language produced generalization
+to the stronger language, an observation that contradicts widely held assumptions.
+119
+
+
+================================================================================
+CHUNK #7
+Page: 161
+Book: Human Communication Disorders
+================================================================================
+Note gaps in the child’s
+inventory and constraints.
+Selection Characteristics Describe the segments and syllable
+structures of the adult words attempted
+by the child.
+List the consonants, vowels, and syllable
+structures of the adult target forms. Note
+gaps and constraints.
+Individual Errors
+Identify and describe the child’s
+segmental errors.
+List and count the number and type of
+segmental and syllable errors
+(substitutions, omissions, additions).
+Error Patterns
+Identify and describe the error patterns
+in the child’s speech.
+List and calculate the frequency of error
+patterns (processes, rules, constraints).
+Infer limitations in the child’s underlying
+representation.
+Variability
+Describe the consistency of the child’s
+productions.
+Calculate the consistency of the child’s
+production of given words. Calculate the
+consistency of error patterns.
+161
+
+
+================================================================================
+CHUNK #8
+Page: 250
+Book: Human Communication Disorders
+================================================================================
+1
+Chapter NINE
+Cleft Lip and Palate and
+Other Craniofacial
+Disorders
+Ann W. Kummer
+Cincinnati Children’s Hospital Medical Center and 
+University of Cincinnati Medical Center
+250
+
+
+================================================================================
+CHUNK #9
+Page: 315
+Book: Human Communication Disorders
+================================================================================
+Selected Readings
+303
+and accuracy of articulation. During preschool, Case 3’s speech remained highly
+unintelligible, but a system of teaming one-word signs (Makaton) to vocalizations
+was used. His speech pathologist also employed a visual cueing symbol system
+(COMPIC) to enhance communication and increase utterance length. At the age of
+7 years, Case 3 was prescribed an electronic communication board. Communicative
+interaction was largely based on a combination of gesture, an AAC communication
+device, and limited intelligible speech. Ongoing multidisciplinary management,
+inclusive of speech pathology treatment, was also continued throughout Case 3’s
+schooling to support his needs.
+QUESTIONS
+1. What other multidisciplinary team members may also have a role in the commu-
+nication treatment of children such as Case 3, and how?
+2. What considerations are required for socialization in children with developmen-
+tal dysarthria?
+3. How might treatment considerations change based on variations in type of
+cerebral palsy?
+1 
+STUDY QUESTIONS
+1. Highlight the differences and similarities
+between adult and child populations in relation
+to acquired neurogenic speech disorders.
+2. Explain why treating the subsystems of speech
+(respiration, phonation, resonance, articula-
+tion) are important within the intervention
+process for individuals with dysarthria.
+3. Why is it important that individuals with a
+motor speech disorder undergo a comprehensive
+speech pathology assessment even if a medical
+diagnosis has already been given? What other
+factors must be considered in doing so apart
+from the motor speech components?
+4. What are the ongoing resource considerations
+related to developmental neurogenic disorders
+and management planning at a multidiscipli-
+nary level?
+5. What is the expected impact of a developmental
+neurogenic disorder on language development?
+1 
+SELECTED READINGS
+Barlow, S. M., Finan, D. S., Andreatta, R. D., & Boliek, C.
+
+
+================================================================================
+CHUNK #10
+Page: 51
+Book: Human Communication Disorders
+================================================================================
+Major developmental stress is placed on the
+semantics and pragmatics of language. The child learns to use existing forms to com-
+municate more effectively. Metalinguistic abilities that enable a language user to think
+about and reflect on language also become more prominent during this period. In
+addition, the child learns new means of communication, reading and writing. The
+child’s oral language knowledge forms a base for this new learning (V. Reed, 1986),
+even though this base has not completely developed and will continue to mature
+throughout this period.
+While the changes during preschool years are rapid and dramatic, those occurring
+during school years are slower and more subtle. Emphasis shifts from spoken to writ-
+ten language in both input and output. As a result, by fourth grade the child is using
+reading skills to learn advanced, often specialized, vocabulary, figurative or nonliteral
+language, and complex forms (G. A. Miller & Gildea, 1987). The shift to reading and
+writing and the emphasis on more-formal language instruction require greater
+metalinguistic competence. In essence, written language is decontextualized or less
+dependent on the nonlinguistic context, requiring the user to obtain all contextual
+information from print, and, therefore, is more abstract. Abstract learning is also evi-
+denced in figurative language and in linguistic ambiguities, such as jokes and puns
+(Nippold, 1988a, 1988b). This shift correlates with changes in cognition from concrete
+to abstract (Kamhi & Lee, 1988).
+Adult development continues to concentrate on semantics and pragmatics, with
+increased vocabulary growth and versatility in use. Vocabulary growth and categoriza-
+tion continue throughout life. New words are added for specialized occupations, inter-
+ests, and socialization. In addition, the adult becomes an even more adept user of
+language, able to adapt her language style to different social contexts and different
+communication goals.
+In the realm of language form, school-age development consists of simultaneous
+expansion of existing forms and acquisition of new ones. Sentence production contin-
+ues to expand during the school-age through adult years across individuals at all
+socioeconomic levels and of all racial/ethnic groups (H. K. Craig, Washington, &
+Thompson-Porter, 1998). The child’s syntactic growth continues with internal
+sentence expansion by elaboration of the noun and verb elements, expansion of con-
+joining and embedding, and addition of structures such as passive voice. Most first
+graders do not produce adult passive sentences (The cat was chased by the dog), reflex-
+ive pronouns (myself, themselves), because clauses, and gerunds, and many do not com-
+prehend the adverbial -ly; irregular noun and verb agreement (The sheep is eating; The
+fish are eating); several conjunctions (though, however); passive sentences; and several
+verb tenses, such as the past participle (has eaten) and the perfect tense (has been verb
+-ing). In addition, school-age children still have difficulty with some prepositions, verb
+tensing, and plurals.
+
+
+================================================================================
+CHUNK #11
+Page: 350
+Book: Human Communication Disorders
+================================================================================
+Some of the specific symbol characteristics
+are discussed in the following section.
+Symbol Characteristics
+A growing body of research has begun to investigate char-
+acteristics of the symbols used in AAC. Several studies have focused on the characteris-
+tic of iconicity, with less research on other characteristics. 
+
+================================================================================
+CHUNK #12
+Page: 37
+Book: Human Communication Disorders
+================================================================================
+Language
+25
+Examples include ’s, -er, un-, and -ly (meaning possession, more, negative, and manner,
+respectively). By combining the free and bound morphemes mentioned here, we can
+create dog’s, bigger, and unhappily.
+Phonology
+Each language has specific speech sounds or phonemes and sound com-
+binations that are characteristic of that language. Phonemes, the smallest meaningful
+units of speech sound, are combined in specific ways to form words. Phonological rules
+govern the distribution and sequencing of phonemes within a language. Distributional
+rules describe which sounds can be employed in various positions in words. For exam-
+ple, in English, the /ŋ/ or “ny” sound found in ring may not appear at the beginning of
+a word.
+Sequencing rules determine which sounds may appear in combination. For exam-
+ple, the word brick is perfectly acceptable in English. Blick is not an English word, but
+would be acceptable. Bnick could never be an acceptable English word. In addition,
+sequencing rules concern the sound modifications made when two phonemes appear
+next to each other. The distributional and sequencing rules may both apply. For exam-
+ple, the combination nd will not appear at the beginning of a word, but may appear
+elsewhere, as in window or sand.
+Semantics
+Meaning is a system for dividing reality into categories and units that
+group similar objects, actions, and relationships and distinguish dissimilar ones. Some
+units are mutually exclusive, such as walk and ride. 
+
+================================================================================
+CHUNK #13
+Page: 9
+Book: Human Communication Disorders
+================================================================================
+source-filter theory of speech acoustics
+A theory of the
+acoustic production of speech that states that sound
+energy (such as that produced by the vibrating vocal
+folds) is filtered by the resonances of the vocal tract. This
+theory was formulated especially by Gunnar Fant.
+
+
+================================================================================
+CHUNK #14
+Page: 369
+Book: Human Communication Disorders
+================================================================================
+Teaching strategies will be based on the same learning principle as other forms of
+intervention are.
+The disabled individual and family members should be viewed as critical mem-
+bers of the team, and their input must be a part of the decision-making process. At all
+times, it must be remembered that the focus of intervention is a person who has
+human and civil rights. It is the individual who will live with the results of interven-
+tion for a lifetime. Success of intervention should be viewed from the perspective of
+the individual, not from the perspective of the professional. For example, communi-
+cation strategies that help a child to take part in playful and emotional interactions
+with family members might be viewed as successful if this is the family’s concern. On
+the other hand, if these needs are generally well met by the family without profes-
+sional intervention (i.e., the family has worked out its own patterns of interaction that
+meet emotional needs), the family might select a different aspect of communication
+as the focus of intervention. Perhaps the family is concerned that the child does not
+interact with other children in the neighborhood. The focus of AAC intervention
+should be to address the needs and concerns of the individual and the family.
+It should also be recognized that priorities differ in different settings. 
+
+================================================================================
+CHUNK #15
+Page: 59
+Book: Human Communication Disorders
+================================================================================
+1
+Speech
+47
+(Continued)
+TABLE 2.6
+Speech Development
+Age
+Stage
+Speech
+Other Development
+0–1 month
+Newborn
+Reflexive behavior 
+Suck–swallow pattern 
+Nondifferentiated crying 
+Vegetative sounds with phonation,
+but incomplete resonance
+6–8 lbs, 17–21 in.
+Can’t raise head when on stomach
+Visual and auditory preferences, best
+vision at 71⁄2 in.
+Sensitive to volume, pitch, and
+duration of sound 
+Sleeps about 70% of time
+2–3 months
+Cooing
+Definite stop and start to oral 
+movement 
+Velar to uvular closure or near closure 
+Back consonants and back and middle
+vowels with incomplete resonance
+Holds head up briefly while on
+stomach or sitting supported 
+Repeats own actions 
+Visually searches 
+Begins exploratory play 
+Excited by people 
+Social smile
+4–6 months
+Babbling
+Greater independent control of tongue 
+Prolonged strings of sounds 
+More lip or labial sounds 
+Experiments with sounds
+12–16 lbs, 23–24 in.
+Turns head to localize sound 
+Mouths objects 
+Sits supported for half hour 
+Selective attention to faces 
+Anticipates actions 
+Excites with game play
+7–10 months
+Reduplication
+babbling
+Repetitive syllable production 
+Increased lip control 
+Labial and alveolar plosives /p, b, t, d/,
+nasals, /j/, but not fully formed
+Self-feeding 
+Progresses from creeping through
+crawling to standing 
+Explores objects through manipulation 
+Imitates others physically 
+Gestures
+11–14 months Phonetically
+consistent
+forms and first
+words
+Elevates tongue tip 
+Variegated babbling 
+Intonational patterns 
+Phonetically consistent forms—
+sound–meaning relationships 
+Predominance of /m, w, b, p/ 
+First words primarily CV, VC, CVCV
+reduplicated, and CVCV
+26–30 lbs, 28–30 in.
+Stands alone 
+Feeds self with spoon 
+First steps 
+Uses trial-and-error problem solving 
+Deferred imitation
+2 years
+Has acquired /p, h, w, m, b, k, g/
+31–35 lbs, 32–34 in.
+

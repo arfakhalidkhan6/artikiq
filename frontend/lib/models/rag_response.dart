@@ -23,8 +23,9 @@ class Citation {
 class RagResponse {
   final String answer;
   final List<Citation> citations;
+  final String? traceId;
 
-  RagResponse({required this.answer, required this.citations});
+  RagResponse({required this.answer, required this.citations, this.traceId});
 
   // Converts raw JSON from backend into a RagResponse object
   factory RagResponse.fromJson(Map<String, dynamic> json) {
@@ -34,6 +35,7 @@ class RagResponse {
       citations: list
           .map((i) => Citation.fromJson(Map<String, dynamic>.from(i)))
           .toList(),
+      traceId: json['trace_id']?.toString(),
     );
   }
 }

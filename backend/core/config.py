@@ -19,6 +19,12 @@ LANGFUSE_SECRET_KEY = os.getenv("LANGFUSE_SECRET_KEY")
 LANGFUSE_PUBLIC_KEY = os.getenv("LANGFUSE_PUBLIC_KEY")
 LANGFUSE_HOST = os.getenv("LANGFUSE_HOST", "https://cloud.langfuse.com")
 
+# --- Cohere ---
+COHERE_API_KEY = os.getenv("COHERE_API_KEY")
+
+# --- Groq Fallback api ----
+GROQ_API_KEY_FALLBACK = os.getenv("GROQ_API_KEY_FALLBACK")
+
 # --- Validate all required keys are present ---
 REQUIRED_VARS = {
     "SUPABASE_CONNECTION_STRING": SUPABASE_CONNECTION_STRING,
@@ -26,7 +32,9 @@ REQUIRED_VARS = {
     "GROQ_API_KEY": GROQ_API_KEY,
     "LANGFUSE_SECRET_KEY": LANGFUSE_SECRET_KEY,
     "LANGFUSE_PUBLIC_KEY": LANGFUSE_PUBLIC_KEY,
-}
+    "COHERE_API_KEY": COHERE_API_KEY,
+    "GROQ_API_KEY_FALLBACK": GROQ_API_KEY_FALLBACK,
+    }
 
 missing = [key for key, val in REQUIRED_VARS.items() if not val]
 if missing:

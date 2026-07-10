@@ -78,7 +78,6 @@ class SignUpScreen extends StatelessWidget {
             controller: nameController,
             style: const TextStyle(color: Color(0xFF1E293B)),
             decoration: InputDecoration(
-              hintText: "Enter full name",
               filled: true,
               fillColor: const Color(0xFFF8FAFC),
               border: OutlineInputBorder(
@@ -140,7 +139,6 @@ class SignUpScreen extends StatelessWidget {
             controller: emailController,
             style: const TextStyle(color: Color(0xFF1E293B)),
             decoration: InputDecoration(
-              hintText: "name@clinic.com",
               filled: true,
               fillColor: const Color(0xFFF8FAFC),
               border: OutlineInputBorder(
@@ -165,7 +163,6 @@ class SignUpScreen extends StatelessWidget {
             obscureText: true,
             style: const TextStyle(color: Color(0xFF1E293B)),
             decoration: InputDecoration(
-              hintText: "••••••••",
               filled: true,
               fillColor: const Color(0xFFF8FAFC),
               border: OutlineInputBorder(
