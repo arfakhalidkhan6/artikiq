@@ -151,7 +151,7 @@ class ArtikIQRAGEngine:
             raise RuntimeError("Fallback Groq client is not configured.")
 
         completion = self.llm_client_fallback.chat.completions.create(
-            model="llama-3.1-8b-instant",
+            model="llama-3.3-70b-versatile",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_query}
@@ -166,7 +166,7 @@ class ArtikIQRAGEngine:
 
         return {
             "answer": answer,
-            "model_used": "llama-3.1-8b-instant (fallback)",
+            "model_used": "llama-3.3-70b-versatile (fallback)",
             "input_tokens": input_tokens,
             "output_tokens": output_tokens
         }
@@ -334,7 +334,7 @@ class ArtikIQRAGEngine:
                     raise RuntimeError("Fallback Groq client is not configured.")
 
                 stream = self.llm_client_fallback.chat.completions.create(
-                    model="llama-3.1-8b-instant",
+                    model="llama-3.3-70b-versatile",
                     messages=[
                         {"role": "system", "content": system_prompt},
                         {"role": "user", "content": user_query}
