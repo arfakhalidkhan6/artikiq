@@ -1,9 +1,11 @@
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import StreamingResponse
 import logging
+import psycopg2
 from pydantic import BaseModel
 from models.schemas import QueryRequest, QueryResponse
 from rag.rag_engine import ArtikIQRAGEngine
+from core.config import SUPABASE_CONNECTION_STRING
 from langfuse import get_client
 
 logger = logging.getLogger(__name__)
@@ -21,6 +23,21 @@ class FeedbackRequest(BaseModel):
 @router.get("/")
 def health_check():
     return {"status": "online", "system": "ArtikIQ RAG Engine Core"}
+
+
+@router.get("/health/db")
+def health_check_db():
+    """Lightweight Supabase ping — keeps database active on free tier."""
+    try:
+        conn = psycopg2.connect(SUPABASE_CONNECTION_STRING)
+        cursor = conn.cursor()
+        cursor.execute("SELECT 1")
+        cursor.close()
+        conn.close()
+        return {"status": "ok", "database": "connected"}
+    except Exception as e:
+        logger.error(f"DB HEALTH CHECK ERROR: {str(e)}")
+        return {"status": "error", "database": str(e)}
 
 
 @router.post("/api/query", response_model=QueryResponse)
