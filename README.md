@@ -322,5 +322,5 @@ Key engineering lessons:
 ## Author
 
 **Arfa Khalid**
-AI Engineering Student — Riphah International University, Lahore, Pakistan
-[LinkedIn](https://linkedin.com/in/arfakhalidkhan6) · [GitHub](https://github.com/arfakhalidkhan6)
+Data Science Student — Riphah International University, Lahore, Pakistan
+[LinkedIn](https://www.linkedin.com/in/arfa-khalid-machinelearning) · [GitHub](https://github.com/arfakhalidkhan6)
