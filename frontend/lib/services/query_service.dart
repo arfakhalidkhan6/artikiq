@@ -5,7 +5,7 @@ import '../models/rag_response.dart';
 
 class QueryService {
   // Change this to your Railway URL after deployment
-  final String baseUrl = 'http://127.0.0.1:8000';
+  final String baseUrl = 'https://artikiq-production.up.railway.app';
 
   Future<RagResponse> ask(String question) async {
     try {
@@ -37,7 +37,10 @@ class QueryService {
 
   // Streaming version — yields chunks as they arrive from the backend
   Stream<Map<String, dynamic>> askStream(String question) async* {
-    final request = http.Request('POST', Uri.parse('$baseUrl/api/query/stream'));
+    final request = http.Request(
+      'POST',
+      Uri.parse('$baseUrl/api/query/stream'),
+    );
     request.headers['Content-Type'] = 'application/json';
     request.body = jsonEncode({'query': question});
 
