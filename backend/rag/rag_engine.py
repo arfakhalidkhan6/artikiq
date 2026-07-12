@@ -48,7 +48,6 @@ def extract_cited_sources(answer_text: str, citations_list: list) -> list:
         if any(p.lower() in answer_text.lower() for p in patterns):
             actually_cited.append(citation)
 
-    # Fallback: if nothing matched, return all citations
     if not actually_cited:
         actually_cited = citations_list
 
@@ -199,6 +198,17 @@ class ArtikIQRAGEngine:
             "output_tokens": output_tokens
         }
 
+    def _build_system_prompt(self, formatted_context: str) -> str:
+        """Builds the system prompt with clean citation instructions."""
+        return (
+            "You are an expert Speech-Language Pathology assistant on ArtikIQ.\n"
+            "Answer the query using ONLY the verified textbook segments provided.\n"
+            "Cite sources at the end of each paragraph only, not after every sentence.\n"
+            "Use the exact format [Source N] — one citation per paragraph maximum.\n"
+            "Never repeat the same source number more than once in the entire answer.\n\n"
+            f"--- START TEXTBOOK CONTEXT ---\n{formatted_context}--- END TEXTBOOK CONTEXT ---"
+        )
+
     @observe()
     def generate_cited_answer(self, user_query: str):
         """Non-streaming: assembles context and generates a cited answer, with Groq fallback."""
@@ -238,13 +248,7 @@ class ArtikIQRAGEngine:
                 "doi": meta.get("doi", "")
             })
 
-        system_prompt = (
-            "You are an expert Speech-Language Pathology assistant on ArtikIQ.\n"
-            "Answer the query using ONLY the verified textbook segments provided.\n"
-            "Append source tags explicitly inline (e.g. [Source 1]).\n"
-            "Always use the exact format [Source N] when citing — never group them as [Source 1, Source 2].\n\n"
-            f"--- START TEXTBOOK CONTEXT ---\n{formatted_context}--- END TEXTBOOK CONTEXT ---"
-        )
+        system_prompt = self._build_system_prompt(formatted_context)
 
         with langfuse.start_as_current_observation(
             as_type="generation",
@@ -331,13 +335,7 @@ class ArtikIQRAGEngine:
                 "doi": meta.get("doi", "")
             })
 
-        system_prompt = (
-            "You are an expert Speech-Language Pathology assistant on ArtikIQ.\n"
-            "Answer the query using ONLY the verified textbook segments provided.\n"
-            "Append source tags explicitly inline (e.g. [Source 1]).\n"
-            "Always use the exact format [Source N] when citing — never group them as [Source 1, Source 2].\n\n"
-            f"--- START TEXTBOOK CONTEXT ---\n{formatted_context}--- END TEXTBOOK CONTEXT ---"
-        )
+        system_prompt = self._build_system_prompt(formatted_context)
 
         full_answer = ""
 
