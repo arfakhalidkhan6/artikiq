@@ -27,6 +27,34 @@ NON_CLINICAL_RESPONSE = (
 )
 
 
+def extract_cited_sources(answer_text: str, citations_list: list) -> list:
+    """
+    Robustly detects which source numbers were referenced in the answer.
+    Handles formats: [Source 1], [Source 1, Source 2], Source 1, [1], etc.
+    """
+    actually_cited = []
+    for i, citation in enumerate(citations_list):
+        source_number = i + 1
+        patterns = [
+            f"Source [{source_number}]",
+            f"[Source {source_number}]",
+            f"[{source_number}]",
+            f"Source {source_number},",
+            f"Source {source_number}]",
+            f"Source {source_number}.",
+            f"Source {source_number} ",
+            f"source {source_number}",
+        ]
+        if any(p.lower() in answer_text.lower() for p in patterns):
+            actually_cited.append(citation)
+
+    # Fallback: if nothing matched, return all citations
+    if not actually_cited:
+        actually_cited = citations_list
+
+    return actually_cited
+
+
 class ArtikIQRAGEngine:
     def __init__(self):
         try:
@@ -213,7 +241,8 @@ class ArtikIQRAGEngine:
         system_prompt = (
             "You are an expert Speech-Language Pathology assistant on ArtikIQ.\n"
             "Answer the query using ONLY the verified textbook segments provided.\n"
-            "Append source tags explicitly inline (e.g. [Source 1]).\n\n"
+            "Append source tags explicitly inline (e.g. [Source 1]).\n"
+            "Always use the exact format [Source N] when citing — never group them as [Source 1, Source 2].\n\n"
             f"--- START TEXTBOOK CONTEXT ---\n{formatted_context}--- END TEXTBOOK CONTEXT ---"
         )
 
@@ -243,6 +272,8 @@ class ArtikIQRAGEngine:
             input_cost = (input_tokens / 1_000_000) * INPUT_PRICE_PER_MILLION
             output_cost = (output_tokens / 1_000_000) * OUTPUT_PRICE_PER_MILLION
 
+            actually_cited = extract_cited_sources(answer, citations_list)
+
             generation.update(
                 model=result["model_used"],
                 output=answer,
@@ -262,7 +293,7 @@ class ArtikIQRAGEngine:
 
         return {
             "answer": answer,
-            "citations": citations_list,
+            "citations": actually_cited,
             "trace_id": trace_id
         }
 
@@ -303,7 +334,8 @@ class ArtikIQRAGEngine:
         system_prompt = (
             "You are an expert Speech-Language Pathology assistant on ArtikIQ.\n"
             "Answer the query using ONLY the verified textbook segments provided.\n"
-            "Append source tags explicitly inline (e.g. [Source 1]).\n\n"
+            "Append source tags explicitly inline (e.g. [Source 1]).\n"
+            "Always use the exact format [Source N] when citing — never group them as [Source 1, Source 2].\n\n"
             f"--- START TEXTBOOK CONTEXT ---\n{formatted_context}--- END TEXTBOOK CONTEXT ---"
         )
 
@@ -356,13 +388,7 @@ class ArtikIQRAGEngine:
                 yield json.dumps({"type": "done", "citations": [], "trace_id": None})
                 return
 
-        actually_cited = []
-        for i, citation in enumerate(citations_list):
-            source_number = i + 1
-            if f"Source [{source_number}]" in full_answer or f"[{source_number}]" in full_answer:
-                actually_cited.append(citation)
-        if not actually_cited:
-            actually_cited = citations_list
+        actually_cited = extract_cited_sources(full_answer, citations_list)
 
         trace_id = langfuse.get_current_trace_id()
 
