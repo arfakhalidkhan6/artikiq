@@ -13,7 +13,7 @@ Built as a portfolio project , ArtikIQ demonstrates end-to-end AI engineering ac
 | Resource | URL |
 |---|---|
 | Frontend | https://artikiq-web.vercel.app |
-| Backend API | https://artikiq-production.up.railway.app |
+| Backend API | https://artikiq-production-4934.up.railway.app |
 | API Docs (Swagger) | https://artikiq-production.up.railway.app/docs |
 | GitHub Repo | https://github.com/arfakhalidkhan6/artikiq |
 

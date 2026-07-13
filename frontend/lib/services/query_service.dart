@@ -5,7 +5,7 @@ import '../models/rag_response.dart';
 
 class QueryService {
   // Change this to your Railway URL after deployment
-  final String baseUrl = 'https://artikiq-production.up.railway.app';
+  final String baseUrl = 'https://artikiq-production-4934.up.railway.app';
 
   Future<RagResponse> ask(String question) async {
     try {
