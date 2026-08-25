@@ -77,7 +77,8 @@ class ArtikIQRAGEngine:
                     {"role": "user", "content": user_query}
                 ],
                 temperature=0,
-                max_tokens=5
+                max_tokens=50,
+                reasoning_effort="low"
             )
             verdict = check.choices[0].message.content.strip().upper()
             return "YES" in verdict
