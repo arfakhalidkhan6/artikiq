@@ -199,11 +199,13 @@ class ArtikIQRAGEngine:
             "output_tokens": output_tokens
         }
 
-    def _build_system_prompt(self, formatted_context: str) -> str:
+    def _build_system_prompt(self, formatted_context: str, num_sources: int) -> str:
         """Builds the system prompt with clean citation instructions."""
         return (
             "You are an expert Speech-Language Pathology assistant on ArtikIQ.\n"
             "Answer the query using ONLY the verified textbook segments provided.\n"
+            f"There are exactly {num_sources} sources provided below, numbered 1 through {num_sources}. "
+            f"Never cite a source number outside this range.\n"
             "Cite sources at the end of each paragraph only, not after every sentence.\n"
             "Use the exact format [Source N] — one citation per paragraph maximum.\n"
             "Never repeat the same source number more than once in the entire answer.\n\n"
@@ -249,7 +251,7 @@ class ArtikIQRAGEngine:
                 "doi": meta.get("doi", "")
             })
 
-        system_prompt = self._build_system_prompt(formatted_context)
+        system_prompt = self._build_system_prompt(formatted_context, len(context_blocks))
 
         with langfuse.start_as_current_observation(
             as_type="generation",
@@ -336,7 +338,7 @@ class ArtikIQRAGEngine:
                 "doi": meta.get("doi", "")
             })
 
-        system_prompt = self._build_system_prompt(formatted_context)
+        system_prompt = self._build_system_prompt(formatted_context, len(context_blocks))
 
         full_answer = ""
 
