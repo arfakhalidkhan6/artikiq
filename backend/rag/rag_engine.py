@@ -51,9 +51,6 @@ def extract_cited_sources(answer_text: str, citations_list: list) -> list:
         if any(p.lower() in answer_text.lower() for p in patterns):
             actually_cited.append(citation)
 
-    if not actually_cited:
-        actually_cited = citations_list
-
     return actually_cited
 
 
