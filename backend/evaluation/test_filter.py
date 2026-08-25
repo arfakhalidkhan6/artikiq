@@ -25,7 +25,7 @@ Respond with EXACTLY one word: USABLE or JUNK. Nothing else."""
 
 def classify_chunk(chunk_text):
     response = llm_client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=[
             {"role": "system", "content": FILTER_PROMPT},
             {"role": "user", "content": chunk_text}

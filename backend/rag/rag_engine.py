@@ -71,7 +71,7 @@ class ArtikIQRAGEngine:
         """Quick check using the LLM itself to classify intent before doing any retrieval."""
         try:
             check = self.llm_client.chat.completions.create(
-                model="llama-3.3-70b-versatile",
+                model="openai/gpt-oss-120b",
                 messages=[
                     {"role": "system", "content": "Respond with exactly one word: YES if the user's message is a clinical, medical, or speech-language-pathology related question. NO if it's a greeting, small talk, or unrelated topic."},
                     {"role": "user", "content": user_query}
@@ -150,9 +150,9 @@ class ArtikIQRAGEngine:
             return chunks[:top_n]
 
     def _call_groq_primary(self, system_prompt: str, user_query: str):
-        """Primary generation path using llama-3.3-70b-versatile on primary Groq account."""
+        """Primary generation path using openai/gpt-oss-120b on primary Groq account."""
         completion = self.llm_client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
+            model="openai/gpt-oss-120b",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_query}
@@ -167,7 +167,7 @@ class ArtikIQRAGEngine:
 
         return {
             "answer": answer,
-            "model_used": "llama-3.3-70b-versatile (primary)",
+            "model_used": "openai/gpt-oss-120b (primary)",
             "input_tokens": input_tokens,
             "output_tokens": output_tokens
         }
@@ -178,7 +178,7 @@ class ArtikIQRAGEngine:
             raise RuntimeError("Fallback Groq client is not configured.")
 
         completion = self.llm_client_fallback.chat.completions.create(
-            model="llama-3.3-70b-versatile",
+            model="openai/gpt-oss-120b",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_query}
@@ -193,7 +193,7 @@ class ArtikIQRAGEngine:
 
         return {
             "answer": answer,
-            "model_used": "llama-3.3-70b-versatile (fallback)",
+            "model_used": "openai/gpt-oss-120b (fallback)",
             "input_tokens": input_tokens,
             "output_tokens": output_tokens
         }
@@ -341,7 +341,7 @@ class ArtikIQRAGEngine:
 
         try:
             stream = self.llm_client.chat.completions.create(
-                model="llama-3.3-70b-versatile",
+                model="openai/gpt-oss-120b",
                 messages=[
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_query}
@@ -364,7 +364,7 @@ class ArtikIQRAGEngine:
                     raise RuntimeError("Fallback Groq client is not configured.")
 
                 stream = self.llm_client_fallback.chat.completions.create(
-                    model="llama-3.3-70b-versatile",
+                    model="openai/gpt-oss-120b",
                     messages=[
                         {"role": "system", "content": system_prompt},
                         {"role": "user", "content": user_query}

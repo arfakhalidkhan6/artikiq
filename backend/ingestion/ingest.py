@@ -45,7 +45,7 @@ def classify_chunk(chunk_text: str) -> str:
     """Returns USABLE or JUNK using Groq LLaMA."""
     try:
         response = llm_client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
+            model="openai/gpt-oss-120b",
             messages=[
                 {"role": "system", "content": FILTER_PROMPT},
                 {"role": "user", "content": chunk_text}
