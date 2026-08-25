@@ -162,7 +162,7 @@ class ArtikIQRAGEngine:
             max_tokens=1024
         )
 
-        answer = completion.choices[0].message.content
+        answer = completion.choices[0].message.content.replace("【", "[").replace("】", "]")
         input_tokens = completion.usage.prompt_tokens
         output_tokens = completion.usage.completion_tokens
 
@@ -188,7 +188,7 @@ class ArtikIQRAGEngine:
             max_tokens=1024
         )
 
-        answer = completion.choices[0].message.content
+        answer = completion.choices[0].message.content.replace("【", "[").replace("】", "]")
         input_tokens = completion.usage.prompt_tokens
         output_tokens = completion.usage.completion_tokens
 
@@ -208,6 +208,8 @@ class ArtikIQRAGEngine:
             f"Never cite a source number outside this range.\n"
             "Cite sources at the end of each paragraph only, not after every sentence.\n"
             "Use the exact format [Source N] — one citation per paragraph maximum.\n"
+            "Always use standard square brackets [ and ] for citations. "
+            "Never use full-width brackets such as 【 or 】, and never use any other bracket style.\n"
             "Never repeat the same source number more than once in the entire answer.\n\n"
             f"--- START TEXTBOOK CONTEXT ---\n{formatted_context}--- END TEXTBOOK CONTEXT ---"
         )
@@ -357,6 +359,7 @@ class ArtikIQRAGEngine:
             for chunk in stream:
                 delta = chunk.choices[0].delta.content
                 if delta:
+                    delta = delta.replace("【", "[").replace("】", "]")
                     full_answer += delta
                     yield json.dumps({"type": "answer_chunk", "content": delta})
 
@@ -380,6 +383,7 @@ class ArtikIQRAGEngine:
                 for chunk in stream:
                     delta = chunk.choices[0].delta.content
                     if delta:
+                        delta = delta.replace("【", "[").replace("】", "]")
                         full_answer += delta
                         yield json.dumps({"type": "answer_chunk", "content": delta})
 
