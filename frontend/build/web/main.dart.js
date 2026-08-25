@@ -42787,7 +42787,7 @@ ak5(a){var $async$nW=A.D(function(a0,a1){switch(a0){case 2:n=q
 s=n.pop()
 break
 case 1:o.push(a1)
-s=p}for(;;)switch(s){case 0:c=A.aBb("POST",A.dh("artikiq-production-d090.up.railway.app/api/query/stream",0,null))
+s=p}for(;;)switch(s){case 0:c=A.aBb("POST",A.dh("https://artikiq-production-d090.up.railway.app/api/query/stream",0,null))
 c.r.m(0,"Content-Type","application/json")
 f=t.N
 c.su8(B.a7.ux(A.a3(["query",a],f,f),null))
