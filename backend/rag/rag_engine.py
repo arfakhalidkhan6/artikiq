@@ -38,9 +38,12 @@ def extract_cited_sources(answer_text: str, citations_list: list) -> list:
         patterns = [
             f"Source [{source_number}]",
             f"[Source {source_number}]",
+            f"【Source {source_number}】",
             f"[{source_number}]",
+            f"【{source_number}】",
             f"Source {source_number},",
             f"Source {source_number}]",
+            f"Source {source_number}】",
             f"Source {source_number}.",
             f"Source {source_number} ",
             f"source {source_number}",
